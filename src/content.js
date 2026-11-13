@@ -191,7 +191,7 @@ export const content = {
     work: {
       eyebrow: "Selected work",
       aside:
-        "A few things I’ve built. Different challenges. The same curiosity.",
+        "A few things I’ve built.",
       title: "Ideas, made",
       emphasis: "real.",
       tags: {
@@ -342,7 +342,7 @@ export const content = {
     },
     contact: {
       eyebrow: "Contact",
-      title: "Let's connect",
+      title: "I'd love to hear from you.",
       intro:
         "A new opportunity, a technical challenge, or a business enquiry. I’d love to hear it.",
       cta: "Let’s build something",
@@ -455,7 +455,7 @@ export const content = {
     work: {
       eyebrow: "Ausgewählte Projekte",
       aside:
-        "Ein Einblick in meine Arbeit. Unterschiedliche Aufgaben. Dieselbe Neugier.",
+        "Ein Einblick in meine Arbeit.",
       title: "Aus Ideen wird",
       emphasis: "Wirklichkeit.",
       tags: {
@@ -603,7 +603,7 @@ export const content = {
     },
     contact: {
       eyebrow: "Kontakt",
-      title: "Kontakt aufnehmen",
+      title: "Ich freue mich, von Ihnen zu hören.",
       intro:
         "Eine neue berufliche Chance, eine technische Herausforderung oder eine geschäftliche Anfrage? Ich freue mich auf den Austausch.",
       cta: "Gemeinsam etwas entwickeln",
@@ -716,7 +716,7 @@ export const content = {
     work: {
       eyebrow: "Seçili projeler",
       aside:
-        "Üzerinde çalıştığım fikirlerden birkaçı. Farklı problemler. Aynı merak.",
+        "Üzerinde çalıştığım fikirlerden birkaçı.",
       title: "Fikirden",
       emphasis: "gerçeğe.",
       tags: {
@@ -864,7 +864,7 @@ export const content = {
     },
     contact: {
       eyebrow: "İletişime geçelim",
-      title: "İletişime geçelim",
+      title: "Sizden haber almak isterim.",
       intro:
         "Yeni bir fırsat, teknik bir problem veya bir iş talebi. Sizden duymak isterim.",
       cta: "Birlikte bir şeyler üretelim",
