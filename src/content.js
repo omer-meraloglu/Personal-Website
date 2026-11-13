@@ -121,7 +121,6 @@ export const content = {
       work: "Explore my work",
       cv: "View my CV",
       location: "Currently in Istanbul. Building beyond borders.",
-      motto: "Software with purpose. Data with direction.",
       scroll: "Scroll to discover",
     },
     orbit: {
@@ -393,7 +392,6 @@ export const content = {
       work: "Projekte entdecken",
       cv: "Lebenslauf ansehen",
       location: "Derzeit in Istanbul. Über Grenzen hinweg tätig.",
-      motto: "Software mit Sinn. Daten mit Richtung.",
       scroll: "Weiter entdecken",
     },
     orbit: {
@@ -662,7 +660,6 @@ export const content = {
       work: "Projelerimi keşfet",
       cv: "Özgeçmişimi görüntüle",
       location: "Şu anda İstanbul’da. Sınırların ötesine.",
-      motto: "Amacı olan yazılım. Yol gösteren veri.",
       scroll: "Keşfetmek için kaydır",
     },
     orbit: {

@@ -332,7 +332,6 @@ function Hero() {
         </div>
       </div>
       <div className="hero-bottom mono">
-        <span>{t.hero.motto}</span>
         <a href="#work">
           {t.hero.scroll} <span aria-hidden="true">↓</span>
         </a>

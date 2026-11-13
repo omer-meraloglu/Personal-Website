@@ -473,6 +473,9 @@ em {
   font-size: 11px;
   color: #69735c;
 }
+.hero-bottom > a {
+  margin-left: auto;
+}
 .hero-bottom a span {
   margin-left: 15px;
 }
@@ -1920,9 +1923,6 @@ h2 em {
     font-size: 9px;
     gap: 20px;
     align-items: center;
-  }
-  .hero-bottom > span {
-    max-width: 165px;
   }
   .hero-bottom > a {
     text-align: right;
