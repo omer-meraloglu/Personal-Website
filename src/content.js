@@ -240,7 +240,7 @@ export const content = {
         type: "AI automation · Web application",
         visual: "The world. In five minutes.",
         description:
-          "An AI-assisted, five-minute weekday news briefing. Automated research and publishing, direct source links, and an edition archive turn the daily news cycle into a calmer reading ritual.",
+          "An AI-assisted, five-minute news briefing, seven days a week. Automated research and publishing, direct source links, and an edition archive turn the daily news cycle into a calmer reading ritual.",
         alt: "First Light’s morning briefing and source-linked news",
       },
       fraud: {
@@ -504,7 +504,7 @@ export const content = {
         type: "KI-Automatisierung · Webanwendung",
         visual: "Die Welt. In fünf Minuten.",
         description:
-          "Ein KI-gestütztes Nachrichtenbriefing für fünf Minuten an jedem Werktag. Automatisierte Recherche und Veröffentlichung, direkte Quellenlinks und ein Ausgabenarchiv machen den Nachrichtenalltag übersichtlicher.",
+          "Ein KI-gestütztes Nachrichtenbriefing für fünf Minuten, sieben Tage die Woche. Automatisierte Recherche und Veröffentlichung, direkte Quellenlinks und ein Ausgabenarchiv machen den Nachrichtenalltag übersichtlicher.",
         alt: "Das Morgenbriefing von First Light mit direkten Nachrichtenquellen",
       },
       fraud: {
@@ -765,7 +765,7 @@ export const content = {
         type: "Yapay zekâ otomasyonu · Web uygulaması",
         visual: "Dünya. Beş dakikada.",
         description:
-          "Hafta içi her gün beş dakikada okunabilen, yapay zekâ destekli haber özeti. Otomatik araştırma ve yayımlama, doğrudan kaynak bağlantıları ve sayı arşiviyle gündemi takip etmeyi daha sakin bir deneyime dönüştürüyor.",
+          "Haftanın yedi günü beş dakikada okunabilen, yapay zekâ destekli haber özeti. Otomatik araştırma ve yayımlama, doğrudan kaynak bağlantıları ve sayı arşiviyle gündemi takip etmeyi daha sakin bir deneyime dönüştürüyor.",
         alt: "First Light sabah özeti ve kaynak bağlantılı haberleri",
       },
       fraud: {
