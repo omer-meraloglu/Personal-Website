@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { orbitData } from "../src/orbit-data.js";
 import {
   content,
   languages,
@@ -30,7 +31,18 @@ for (const { code } of languages) {
     Object.keys(content[code].projects).sort(),
     projectData.map((project) => project.id).sort(),
   );
+  assert.equal(content[code].orbit.aspects.length, orbitData.length);
+  assert.ok(
+    !/solar system|Sonnensystem|Güneş Sistemi/i.test(
+      JSON.stringify(content[code]),
+    ),
+  );
+  assert.ok(!Object.hasOwn(content[code].orbit, "all"));
+  assert.ok(!Object.hasOwn(content[code].orbit, "inner"));
+  assert.ok(!Object.hasOwn(content[code].orbit, "outer"));
 }
+assert.equal(orbitData.length, 8);
+assert.equal(new Set(orbitData.map((form) => form.id)).size, 8);
 assert.equal(
   new Set(projectData.map((project) => project.id)).size,
   projectData.length,

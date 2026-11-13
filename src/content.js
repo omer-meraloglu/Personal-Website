@@ -124,24 +124,64 @@ export const content = {
       motto: "Software with purpose. Data with direction.",
       scroll: "Scroll to discover",
     },
-    solar: {
-      title: "Fig. 01 — A universe of possibilities",
+    orbit: {
+      title: "Fig. 01 — Worlds I reside in",
       label:
-        "Interactive 3D solar system with the Sun and eight orbiting planets. Drag to rotate or use the controls below.",
-      sun: "Sun",
-      planets: "8 planets",
-      hint: "Drag to explore",
-      scale: "A stylized solar system",
-      modes: "Solar system view",
-      all: "All planets",
-      inner: "Inner",
-      outer: "Outer",
-      pause: "Pause orbital animation",
-      resume: "Resume orbital animation",
-      left: "Rotate solar system left",
-      right: "Rotate solar system right",
-      rotate: "Rotate solar system",
-      fallback: "The Sun & eight planets",
+        "Eight interactive worlds represent my professional strengths. Drag in any direction to rotate freely, or choose a name to explore.",
+      hint: "Drag freely · Choose a world",
+      explore: "Explore my professional strengths",
+      pause: "Pause motion",
+      resume: "Resume motion",
+      left: "Rotate left",
+      right: "Rotate right",
+      up: "Rotate upward",
+      down: "Rotate downward",
+      rotate: "Rotate the composition",
+      reset: "Reset view",
+      fallback: "Eight ways I build",
+      detail: "Professional strength",
+      aspects: [
+        {
+          title: "Software Engineering",
+          description:
+            "Full-stack applications built with Python, TypeScript, React, and Next.js.",
+        },
+        {
+          title: "Data Science",
+          description:
+            "Finding useful patterns through analysis, statistics, and machine learning.",
+        },
+        {
+          title: "Applied AI",
+          description:
+            "Connecting LLMs, retrieval, and explainability with LangChain, FAISS, and SHAP.",
+        },
+        {
+          title: "Data Engineering",
+          description:
+            "Turning raw data into usable foundations with SQL, BigQuery, dbt, and ETL.",
+        },
+        {
+          title: "Automation",
+          description:
+            "Making repeatable work reliable, from CRM workflows to First Light’s publishing pipeline.",
+        },
+        {
+          title: "Product Thinking",
+          description:
+            "Letting user experience and business needs guide the path from an idea to a useful product.",
+        },
+        {
+          title: "Cloud Delivery",
+          description:
+            "Taking applications into production with AWS, Vercel, and practical deployment workflows.",
+        },
+        {
+          title: "Collaboration",
+          description:
+            "Building with teammates, learning from mentors, and connecting engineering with data.",
+        },
+      ],
     },
     disciplines: [
       "Software engineering",
@@ -172,8 +212,6 @@ export const content = {
       code: "Explore code",
       pipeline: "Pipeline GitHub",
       interface: "Streamlit GitHub",
-      with: "Built with",
-      mentor: "Mentored by",
       featured: "Featured project",
       screenshot: "Live application preview",
       holdout: "Stratified 80/20 hold-out",
@@ -358,24 +396,64 @@ export const content = {
       motto: "Software mit Sinn. Daten mit Richtung.",
       scroll: "Weiter entdecken",
     },
-    solar: {
-      title: "Abb. 01 — Ein Universum voller Möglichkeiten",
+    orbit: {
+      title: "Abb. 01 — Welten, in denen ich zu Hause bin",
       label:
-        "Interaktives 3D-Sonnensystem mit der Sonne und acht umlaufenden Planeten. Zum Drehen ziehen oder die Steuerelemente verwenden.",
-      sun: "Sonne",
-      planets: "8 Planeten",
-      hint: "Zum Erkunden ziehen",
-      scale: "Stilisiertes Sonnensystem",
-      modes: "Ansicht des Sonnensystems",
-      all: "Alle Planeten",
-      inner: "Innere",
-      outer: "Äußere",
-      pause: "Umlaufanimation anhalten",
-      resume: "Umlaufanimation fortsetzen",
-      left: "Sonnensystem nach links drehen",
-      right: "Sonnensystem nach rechts drehen",
-      rotate: "Sonnensystem drehen",
-      fallback: "Die Sonne & acht Planeten",
+        "Acht interaktive Welten stehen für meine beruflichen Stärken. Zum freien Drehen in eine beliebige Richtung ziehen oder einen Namen auswählen.",
+      hint: "Frei drehen · Welt auswählen",
+      explore: "Meine beruflichen Stärken entdecken",
+      pause: "Bewegung anhalten",
+      resume: "Bewegung fortsetzen",
+      left: "Nach links drehen",
+      right: "Nach rechts drehen",
+      up: "Nach oben drehen",
+      down: "Nach unten drehen",
+      rotate: "Die Komposition drehen",
+      reset: "Ansicht zurücksetzen",
+      fallback: "Acht Facetten meiner Arbeit",
+      detail: "Berufliche Stärke",
+      aspects: [
+        {
+          title: "Softwareentwicklung",
+          description:
+            "Full-Stack-Anwendungen mit Python, TypeScript, React und Next.js entwickeln.",
+        },
+        {
+          title: "Data Science",
+          description:
+            "Mit Analyse, Statistik und Machine Learning nützliche Muster erkennen.",
+        },
+        {
+          title: "Angewandte KI",
+          description:
+            "LLMs, Informationsabruf und Erklärbarkeit mit LangChain, FAISS und SHAP verbinden.",
+        },
+        {
+          title: "Data Engineering",
+          description:
+            "Rohdaten mit SQL, BigQuery, dbt und ETL in nutzbare Grundlagen verwandeln.",
+        },
+        {
+          title: "Automatisierung",
+          description:
+            "Wiederkehrende Arbeit zuverlässig gestalten: von CRM-Abläufen bis zur Veröffentlichung von First Light.",
+        },
+        {
+          title: "Produktdenken",
+          description:
+            "Nutzererfahrung und geschäftliche Anforderungen führen von einer Idee zu einem nützlichen Produkt.",
+        },
+        {
+          title: "Cloud & Bereitstellung",
+          description:
+            "Anwendungen mit AWS, Vercel und praxisnahen Deployment-Abläufen in den Produktivbetrieb bringen.",
+        },
+        {
+          title: "Zusammenarbeit",
+          description:
+            "Im Team entwickeln, von Mentoren lernen und Softwareentwicklung mit Daten verbinden.",
+        },
+      ],
     },
     disciplines: [
       "Softwareentwicklung",
@@ -406,8 +484,6 @@ export const content = {
       code: "Code ansehen",
       pipeline: "Pipeline auf GitHub",
       interface: "Streamlit auf GitHub",
-      with: "Entwickelt mit",
-      mentor: "Betreut von",
       featured: "Projekt im Fokus",
       screenshot: "Vorschau der Live-Anwendung",
       holdout: "Stratifizierte 80/20-Aufteilung",
@@ -589,24 +665,64 @@ export const content = {
       motto: "Amacı olan yazılım. Yol gösteren veri.",
       scroll: "Keşfetmek için kaydır",
     },
-    solar: {
-      title: "Şekil 01 — Olasılıklarla dolu bir evren",
+    orbit: {
+      title: "Şekil 01 — İçinde yaşadığım dünyalar",
       label:
-        "Güneş ve yörüngelerinde dönen sekiz gezegenin etkileşimli 3B modeli. Döndürmek için sürükleyin veya aşağıdaki kontrolleri kullanın.",
-      sun: "Güneş",
-      planets: "8 gezegen",
-      hint: "Keşfetmek için sürükle",
-      scale: "Stilize Güneş Sistemi",
-      modes: "Güneş Sistemi görünümü",
-      all: "Tüm gezegenler",
-      inner: "İç",
-      outer: "Dış",
-      pause: "Yörünge animasyonunu duraklat",
-      resume: "Yörünge animasyonunu sürdür",
-      left: "Güneş Sistemi’ni sola döndür",
-      right: "Güneş Sistemi’ni sağa döndür",
-      rotate: "Güneş Sistemi’ni döndür",
-      fallback: "Güneş ve sekiz gezegen",
+        "Sekiz etkileşimli dünya, mesleki yetkinliklerimi temsil ediyor. Serbestçe döndürmek için herhangi bir yöne sürükleyin veya bir isim seçin.",
+      hint: "Serbestçe döndür · Bir dünya seç",
+      explore: "Mesleki yetkinliklerimi keşfet",
+      pause: "Hareketi duraklat",
+      resume: "Hareketi sürdür",
+      left: "Sola döndür",
+      right: "Sağa döndür",
+      up: "Yukarı döndür",
+      down: "Aşağı döndür",
+      rotate: "Kompozisyonu döndür",
+      reset: "Görünümü sıfırla",
+      fallback: "Üretimimin sekiz yönü",
+      detail: "Mesleki yetkinlik",
+      aspects: [
+        {
+          title: "Yazılım mühendisliği",
+          description:
+            "Python, TypeScript, React ve Next.js ile uçtan uca uygulamalar geliştirmek.",
+        },
+        {
+          title: "Veri bilimi",
+          description:
+            "Analiz, istatistik ve makine öğrenmesiyle veride anlamlı örüntüler bulmak.",
+        },
+        {
+          title: "Uygulamalı yapay zekâ",
+          description:
+            "LLM, bilgi getirme ve açıklanabilirliği LangChain, FAISS ve SHAP ile birleştirmek.",
+        },
+        {
+          title: "Veri mühendisliği",
+          description:
+            "SQL, BigQuery, dbt ve ETL ile ham veriyi kullanılabilir bir temele dönüştürmek.",
+        },
+        {
+          title: "Otomasyon",
+          description:
+            "CRM iş akışlarından First Light’ın yayın sürecine kadar tekrar eden işleri güvenilir hâle getirmek.",
+        },
+        {
+          title: "Ürün odaklı düşünce",
+          description:
+            "Bir fikri faydalı bir ürüne taşırken kullanıcı deneyimini ve iş ihtiyaçlarını merkeze almak.",
+        },
+        {
+          title: "Buluta taşıma",
+          description:
+            "AWS, Vercel ve uygulanabilir dağıtım süreçleriyle uygulamaları canlıya almak.",
+        },
+        {
+          title: "İş birliği",
+          description:
+            "Ekip arkadaşlarıyla üretmek, mentorlardan öğrenmek ve yazılımla veriyi buluşturmak.",
+        },
+      ],
     },
     disciplines: [
       "Yazılım mühendisliği",
@@ -637,8 +753,6 @@ export const content = {
       code: "Kodu incele",
       pipeline: "Veri hattı GitHub",
       interface: "Streamlit GitHub",
-      with: "Birlikte geliştirildi",
-      mentor: "Mentor",
       featured: "Öne çıkan proje",
       screenshot: "Canlı uygulama önizlemesi",
       holdout: "Katmanlı 80/20 test ayrımı",

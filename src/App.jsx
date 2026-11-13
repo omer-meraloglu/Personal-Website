@@ -1,3 +1,4 @@
+import { orbitData } from "./orbit-data.js";
 import React, {
   createContext,
   useContext,
@@ -83,7 +84,7 @@ function Header() {
       </a>
       <nav className="desktop-nav" aria-label={t.nav.open}>
         <a href="#work">
-          {t.nav.work} <sup>{String(projectData.length).padStart(2, "0")}</sup>
+          {t.nav.work} <sup>01</sup>
         </a>
         <a href="#about">{t.nav.about}</a>
         <a href="#experience">{t.nav.journey}</a>
@@ -126,12 +127,12 @@ function Hero() {
   const { t } = useLocale();
   const containerRef = useRef(null),
     sceneRef = useRef(null);
-  const [mode, setMode] = useState("all");
+  const [selected, setSelected] = useState(0);
   const [paused, setPaused] = useState(false);
   const [sceneReady, setSceneReady] = useState(false);
   const [sceneFailed, setSceneFailed] = useState(false);
-  const current = useRef({ mode, paused });
-  current.current = { mode, paused };
+  const current = useRef({ selected, paused });
+  current.current = { selected, paused };
   useEffect(() => {
     let cancelled = false;
     const media = matchMedia("(prefers-reduced-motion: reduce)");
@@ -142,8 +143,12 @@ function Hero() {
       .then(({ createScene }) => {
         if (cancelled) return;
         try {
-          sceneRef.current = createScene(containerRef.current, setSceneReady);
-          sceneRef.current.setMode(current.current.mode);
+          sceneRef.current = createScene(
+            containerRef.current,
+            setSceneReady,
+            setSelected,
+          );
+          sceneRef.current.setSelected(current.current.selected);
           sceneRef.current.setPaused(media.matches || current.current.paused);
           setSceneReady(true);
         } catch {
@@ -161,11 +166,15 @@ function Hero() {
     };
   }, []);
   useEffect(() => {
-    sceneRef.current?.setMode(mode);
-  }, [mode]);
+    sceneRef.current?.setSelected(selected);
+  }, [selected]);
   useEffect(() => {
     sceneRef.current?.setPaused(paused);
   }, [paused]);
+  useEffect(() => {
+    sceneRef.current?.refreshLabels();
+  }, [sceneReady, t.orbit]);
+  const aspect = t.orbit.aspects[selected];
   return (
     <section className="hero wrap" aria-labelledby="hero-heading">
       <div className="hero-content">
@@ -192,57 +201,81 @@ function Hero() {
           {t.hero.location}
         </p>
       </div>
-      <div className="hero-art">
-        <div className="scene-index mono">{t.solar.title}</div>
+      <div className="hero-art professional-orbit">
+        <div className="scene-index mono">{t.orbit.title}</div>
         <div className="scene-corner corner-tl" aria-hidden="true" />
         <div className="scene-corner corner-br" aria-hidden="true" />
         <div
           className={"scene" + (sceneReady ? " is-ready" : "")}
           id="scene"
           ref={containerRef}
-          role="img"
-          aria-label={t.solar.label}
+          role="group"
+          aria-label={t.orbit.label}
         >
-          <div className="solar-fallback" aria-hidden="true">
-            <i className="fallback-sun" />
+          <div className="orbit-fallback" aria-hidden="true">
+            <i className="fallback-core" />
             {Array.from({ length: 5 }, (_, index) => (
               <i
-                key={index}
                 className="fallback-orbit"
+                key={index}
                 style={{ "--orbit": index }}
               />
             ))}
           </div>
-        </div>
-        <div className="scene-caption mono">
-          <span>
-            {t.solar.sun} <b aria-hidden="true">✳</b> {t.solar.planets}
-          </span>
-          <span>{t.solar.scale}</span>
-        </div>
-        <div className="scene-controls">
+          <svg className="orbit-connections" aria-hidden="true">
+            {orbitData.map((form, index) => (
+              <line key={form.id} data-orbit-connector={index} />
+            ))}
+          </svg>
           <div
-            className="scene-modes"
+            className={"orbit-markers" + (sceneFailed ? " is-static" : "")}
             role="group"
-            aria-label={t.solar.modes}
-            hidden={sceneFailed}
+            aria-label={t.orbit.explore}
+            hidden={!sceneReady && !sceneFailed}
           >
-            {["all", "inner", "outer"].map((view) => (
+            {orbitData.map((form, index) => (
               <button
-                key={view}
-                data-mode={view}
-                aria-pressed={mode === view}
-                onClick={() => setMode(view)}
+                key={form.id}
+                className="orbit-marker"
+                data-orbit-marker={index}
+                style={{ "--sphere-color": form.color }}
+                aria-label={t.orbit.aspects[index].title}
+                aria-pressed={selected === index}
+                aria-controls="orbit-detail"
+                title={t.orbit.aspects[index].title}
+                onClick={() => setSelected(index)}
+                onFocus={(event) => {
+                  setSelected(index);
+                  if (event.currentTarget.matches(":focus-visible"))
+                    setPaused(true);
+                }}
               >
-                {t.solar[view]}
+                {t.orbit.aspects[index].title}
               </button>
             ))}
           </div>
+        </div>
+        <div className="world-list" role="group" aria-label={t.orbit.explore}>
+          {orbitData.map((form, index) => (
+            <button
+              key={form.id}
+              aria-pressed={selected === index}
+              onClick={() => setSelected(index)}
+            >
+              <i aria-hidden="true" style={{ background: form.color }} />
+              {t.orbit.aspects[index].title}
+            </button>
+          ))}
+        </div>
+        <div className="orbit-toolbar">
+          <p className="scene-hint mono">
+            {sceneFailed ? t.orbit.fallback : t.orbit.hint}
+          </p>
           <div className="scene-buttons" hidden={sceneFailed}>
             <button
               className="motion-toggle"
               id="motion-toggle"
-              aria-label={paused ? t.solar.resume : t.solar.pause}
+              aria-label={paused ? t.orbit.resume : t.orbit.pause}
               aria-pressed={paused}
               onClick={() => setPaused(!paused)}
             >
@@ -251,26 +284,52 @@ function Hero() {
             <div
               className="rotation-controls"
               role="group"
-              aria-label={t.solar.rotate}
+              aria-label={t.orbit.rotate}
             >
               <button
-                aria-label={t.solar.left}
+                aria-label={t.orbit.left}
                 onClick={() => sceneRef.current?.rotate(-1)}
               >
                 ←
               </button>
               <button
-                aria-label={t.solar.right}
+                aria-label={t.orbit.right}
                 onClick={() => sceneRef.current?.rotate(1)}
               >
                 →
               </button>
+              <button
+                aria-label={t.orbit.up}
+                onClick={() => sceneRef.current?.rotate(0, -1)}
+              >
+                ↑
+              </button>
+              <button
+                aria-label={t.orbit.down}
+                onClick={() => sceneRef.current?.rotate(0, 1)}
+              >
+                ↓
+              </button>
             </div>
+            <button
+              className="reset-view"
+              aria-label={t.orbit.reset}
+              onClick={() => sceneRef.current?.reset()}
+            >
+              ⟲
+            </button>
           </div>
         </div>
-        <p className="scene-hint mono">
-          {sceneFailed ? t.solar.fallback : t.solar.hint}
-        </p>
+        <div
+          id="orbit-detail"
+          className="orbit-detail"
+          role="status"
+          aria-live="polite"
+        >
+          <span className="orbit-detail-index mono">{t.orbit.detail}</span>
+          <h3>{aspect.title}</h3>
+          <p>{aspect.description}</p>
+        </div>
       </div>
       <div className="hero-bottom mono">
         <span>{t.hero.motto}</span>
@@ -491,17 +550,6 @@ function Projects() {
                         {t.work.interface} <Arrow />
                       </External>
                     </div>
-                    <p className="project-credit">
-                      {t.work.with}{" "}
-                      <External href="https://www.linkedin.com/in/ertugrulkaramanli/">
-                        Ertuğrul Karamanlı
-                      </External>
-                      <br />
-                      {t.work.mentor}{" "}
-                      <External href="https://www.linkedin.com/in/mehmetcankavasoglu/">
-                        Mehmetcan Kavasoğlu
-                      </External>
-                    </p>
                   </>
                 ) : (
                   <External className="project-link" href={project.url}>
