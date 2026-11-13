@@ -344,7 +344,7 @@ export const content = {
       eyebrow: "Contact",
       title: "I'd love to hear from you.",
       intro:
-        "A new opportunity, a technical challenge, or a business enquiry. I’d love to hear it.",
+        "A new opportunity, a technical challenge, or a business enquiry.",
       cta: "Let’s build something",
       copy: "Copy",
       copied: "Copied",
@@ -605,7 +605,7 @@ export const content = {
       eyebrow: "Kontakt",
       title: "Ich freue mich, von Ihnen zu hören.",
       intro:
-        "Eine neue berufliche Chance, eine technische Herausforderung oder eine geschäftliche Anfrage? Ich freue mich auf den Austausch.",
+        "Eine neue berufliche Chance, eine technische Herausforderung oder eine geschäftliche Anfrage.",
       cta: "Gemeinsam etwas entwickeln",
       copy: "Kopieren",
       copied: "Kopiert",
@@ -866,7 +866,7 @@ export const content = {
       eyebrow: "İletişime geçelim",
       title: "Sizden haber almak isterim.",
       intro:
-        "Yeni bir fırsat, teknik bir problem veya bir iş talebi. Sizden duymak isterim.",
+        "Yeni bir fırsat, teknik bir problem veya bir iş talebi.",
       cta: "Birlikte bir şeyler üretelim",
       copy: "Kopyala",
       copied: "Kopyalandı",

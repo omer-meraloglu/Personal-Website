@@ -1,4 +1,4 @@
-import{o as rc}from"./index-DLJiQh8l.js";/**
+import{o as rc}from"./index-1Y3LNPlC.js";/**
  * @license
  * Copyright 2010-2024 Three.js Authors
  * SPDX-License-Identifier: MIT
