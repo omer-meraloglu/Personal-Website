@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host 127.0.0.1",
-    "build": "vite build && node scripts/prerender.mjs",
+    "build": "npm run check && vite build && node scripts/prerender.mjs",
     "preview": "vite preview --host 127.0.0.1",
-    "publish:prepare": "npm run build && node scripts/prepare-pages.mjs"
+    "publish:prepare": "npm run build && node scripts/prepare-pages.mjs",
+    "check": "node scripts/check-content.mjs"
   },
   "dependencies": {
     "react": "^19.2.0",

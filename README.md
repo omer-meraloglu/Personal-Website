@@ -1,6 +1,6 @@
 # Ömer Meraloğlu — Portfolio
 
-A React portfolio for software engineering, data science, and applied AI. Includes an interactive Three.js scene, filterable project gallery, career timeline, current CV, and six certificates.
+A React portfolio for software engineering, data science, and applied AI. Includes an interactive Three.js solar system, filterable project gallery, career timeline, current CV, and six certificates. English is the default, with German and Turkish available in that order. A selected language is remembered locally; `?lang=de` and `?lang=tr` provide shareable language links.
 
 ## Local development
 
@@ -11,7 +11,7 @@ npm ci
 npm run dev
 ```
 
-The application is in `src/`. Static documents, images, and self-hosted fonts are in `public/`. Three.js is loaded separately from the main React bundle. The scene pauses when it is offscreen or the tab is hidden, respects reduced motion, and releases its graphics resources on unmount. When WebGL is unavailable, a CSS illustration preserves the composition.
+The application is in `src/`. Translated content and project links are maintained in `src/content.js`. `npm run check` validates translation coverage, project links, and language ordering. Static documents, images, and self-hosted fonts are in `public/`. Three.js is loaded separately from the main React bundle. The scene pauses when it is offscreen or the tab is hidden, respects reduced motion, and releases its graphics resources on unmount. When WebGL is unavailable, a CSS illustration preserves the composition.
 
 ## Build and deploy
 
@@ -28,8 +28,8 @@ GitHub Pages publishes `master` at [www.omermeraloglu.com](https://www.omermeral
 
 ## Content
 
-Current projects: First Light, IEEE-CIS Fraud Detection, Story Seeds, and Agentic RAG. Fraud detection is described as collaborative work; its model metrics come from the project's public README. Story Seeds is described as a commemorative concept, without implying UN sponsorship. Certificates confirm both Workintech programs were completed in 2026, superseding the CV's older “ongoing” wording on the webpage. The downloadable CV is the file supplied by its owner.
+Current projects: Steamcast, First Light, IEEE-CIS Fraud Detection, Story Seeds, and Agentic RAG. Steamcast includes the live demo, pipeline and interface repositories, and teammate/mentor credit. Its description is grounded in the owner’s supplied LinkedIn post and the public pipeline README. Its thumbnail is a capture of the live application with an example prediction, not a claimed model performance result. Fraud detection is described as collaborative work; its model metrics come from the project's public README. Story Seeds is described as a commemorative concept, without implying UN sponsorship. Certificates confirm both Workintech programs were completed in 2026, superseding the CV's older “ongoing” wording on the webpage. The downloadable CV is the file supplied by its owner.
 
 ## Attribution
 
-Three.js is MIT licensed. Font licenses are in `public/assets/fonts/`. Project thumbnails are captures of the owner's public sites. The portrait was extracted from the supplied CV. No third-party analytics or contact-form service is used.
+The solar system is a stylized illustration with procedural planet textures and is not to scale. Three.js is MIT licensed. Font licenses are in `public/assets/fonts/`. Project thumbnails are captures of the owner's public sites. The portrait was extracted from the supplied CV. No third-party analytics or contact-form service is used.
