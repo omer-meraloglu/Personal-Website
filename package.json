@@ -1,0 +1,20 @@
+{
+  "name": "omer-meraloglu-portfolio",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build && node scripts/prerender.mjs",
+    "preview": "vite preview --host 127.0.0.1",
+    "publish:prepare": "npm run build && node scripts/prepare-pages.mjs"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "three": "0.170.0"
+  },
+  "devDependencies": {
+    "vite": "^6.4.1"
+  }
+}
