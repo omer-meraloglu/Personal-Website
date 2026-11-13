@@ -276,7 +276,7 @@ export const content = {
       paragraphs: [
         "My foundation is software engineering: building full-stack systems, developing business tools, and taking ideas from a first sketch to production. At SAB Tourismo, that meant turning real operational needs into software and CRM automation.",
         "That experience led me deeper into data. With a Software Engineering degree from Bahçeşehir University and completed Data Scientist AI and Data Analyst programs at Workintech, I bring an engineering mindset to analysis, machine learning, and AI-powered products.",
-        "I’m most interested in the space between a useful insight and a working product. That’s where I want to build.",
+        "I focus on turning useful insights into working products. Some of my professional work is covered by non-disclosure agreements and cannot be shared publicly.",
       ],
       cv: "The full story, in my CV",
       portrait: "Portrait of Ömer Meraloğlu",
@@ -540,7 +540,7 @@ export const content = {
       paragraphs: [
         "Meine Grundlage ist die Softwareentwicklung: Full-Stack-Systeme bauen, Geschäftsanwendungen entwickeln und Ideen vom ersten Entwurf bis zum Produktivbetrieb begleiten. Bei SAB Tourismo setzte ich konkrete betriebliche Anforderungen in Software und CRM-Automatisierung um.",
         "Diese Erfahrung führte mich tiefer in die Welt der Daten. Mit einem Abschluss in Software Engineering der Bahçeşehir-Universität und abgeschlossenen Programmen für Data Scientist AI und Data Analyst bei Workintech verbinde ich technisches Denken mit Analyse, Machine Learning und KI-Produkten.",
-        "Mich interessiert besonders der Weg von einer nützlichen Erkenntnis zu einem funktionierenden Produkt. Genau dort möchte ich entwickeln.",
+        "Ich setze nützliche Erkenntnisse in funktionierende Produkte um. Ein Teil meiner beruflichen Arbeit unterliegt Geheimhaltungsvereinbarungen und kann nicht öffentlich gezeigt werden.",
       ],
       cv: "Mehr dazu in meinem Lebenslauf",
       portrait: "Porträt von Ömer Meraloğlu",
@@ -801,7 +801,7 @@ export const content = {
       paragraphs: [
         "Temelim yazılım mühendisliği: uçtan uca sistemler kurmak, iş araçları geliştirmek ve fikirleri ilk taslaktan canlı ürüne taşımak. SAB Tourismo’da bu, gerçek operasyonel ihtiyaçları yazılıma ve CRM otomasyonuna dönüştürmek demekti.",
         "Bu deneyim beni veri alanında derinleşmeye yöneltti. Bahçeşehir Üniversitesi Yazılım Mühendisliği lisansım ve Workintech’te tamamladığım Data Scientist AI ve Data Analyst programlarıyla analiz, makine öğrenmesi ve yapay zekâ ürünlerine mühendislik bakış açısı getiriyorum.",
-        "En çok, faydalı bir içgörü ile çalışan bir ürün arasındaki süreç ilgimi çekiyor. Üretmek istediğim yer tam da burası.",
+        "Faydalı içgörüleri çalışan ürünlere dönüştürmeye odaklanıyorum. Profesyonel çalışmalarımın bir kısmı gizlilik sözleşmeleri kapsamında olduğundan kamuya açık olarak paylaşılamıyor.",
       ],
       cv: "Hikâyenin tamamı özgeçmişimde",
       portrait: "Ömer Meraloğlu’nun portresi",
