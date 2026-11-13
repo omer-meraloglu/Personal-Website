@@ -125,7 +125,7 @@ export const content = {
       scroll: "Scroll to discover",
     },
     orbit: {
-      title: "Fig. 01 — Worlds I reside in",
+      title: "Worlds I reside in",
       label:
         "Eight interactive worlds represent my professional strengths. Drag in any direction to rotate freely, or choose a name to explore.",
       hint: "Drag freely · Choose a world",
@@ -397,7 +397,7 @@ export const content = {
       scroll: "Weiter entdecken",
     },
     orbit: {
-      title: "Abb. 01 — Welten, in denen ich zu Hause bin",
+      title: "Welten, in denen ich zu Hause bin",
       label:
         "Acht interaktive Welten stehen für meine beruflichen Stärken. Zum freien Drehen in eine beliebige Richtung ziehen oder einen Namen auswählen.",
       hint: "Frei drehen · Welt auswählen",
@@ -666,7 +666,7 @@ export const content = {
       scroll: "Keşfetmek için kaydır",
     },
     orbit: {
-      title: "Şekil 01 — İçinde yaşadığım dünyalar",
+      title: "İçinde yaşadığım dünyalar",
       label:
         "Sekiz etkileşimli dünya, mesleki yetkinliklerimi temsil ediyor. Serbestçe döndürmek için herhangi bir yöne sürükleyin veya bir isim seçin.",
       hint: "Serbestçe döndür · Bir dünya seç",
