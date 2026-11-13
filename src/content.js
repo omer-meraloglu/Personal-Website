@@ -271,9 +271,7 @@ export const content = {
         "PyTorch · LLM · LangChain · Vector search · Streamlit · Automation",
       eyebrow: "The person behind the code",
       place: "Istanbul, Türkiye",
-      first: "A builder’s instinct.",
-      second: "A scientist’s",
-      emphasis: "curiosity.",
+      title: "About me",
       lead: "I like understanding how things work. I like making them work better even more.",
       paragraphs: [
         "My foundation is software engineering: building full-stack systems, developing business tools, and taking ideas from a first sketch to production. At SAB Tourismo, that meant turning real operational needs into software and CRM automation.",
@@ -282,7 +280,6 @@ export const content = {
       ],
       cv: "The full story, in my CV",
       portrait: "Portrait of Ömer Meraloğlu",
-      caption: "Engineer. Analyst. Builder.",
       capabilities: [
         { label: "Engineer", title: "Build the system." },
         { label: "Understand", title: "Follow the data." },
@@ -291,8 +288,7 @@ export const content = {
     },
     journey: {
       eyebrow: "The journey",
-      title: ["Learning.", "Building."],
-      emphasis: "Connecting.",
+      title: "My journey",
       cv: "View full CV",
       entries: [
         {
@@ -345,12 +341,10 @@ export const content = {
       open: "Open certificate",
     },
     contact: {
-      eyebrow: "Let’s connect",
-      first: "Good things start",
-      second: "with a",
-      emphasis: "conversation.",
+      eyebrow: "Contact",
+      title: "Let's connect",
       intro:
-        "A new opportunity, a technical challenge, or an idea worth exploring. I’d love to hear it.",
+        "A new opportunity, a technical challenge, or a business enquiry. I’d love to hear it.",
       cta: "Let’s build something",
       copy: "Copy",
       copied: "Copied",
@@ -364,7 +358,6 @@ export const content = {
       back: "Back to top",
     },
     footer: {
-      built: "Built with intention & a little curiosity.",
       thanks: "Thanks for stopping by",
     },
   },
@@ -542,9 +535,7 @@ export const content = {
         "PyTorch · LLM · LangChain · Vektorsuche · Streamlit · Automatisierung",
       eyebrow: "Der Mensch hinter dem Code",
       place: "Istanbul, Türkei",
-      first: "Der Antrieb, zu bauen.",
-      second: "Die Neugier, zu",
-      emphasis: "verstehen.",
+      title: "Über mich",
       lead: "Ich möchte verstehen, wie Dinge funktionieren. Noch lieber mache ich sie besser.",
       paragraphs: [
         "Meine Grundlage ist die Softwareentwicklung: Full-Stack-Systeme bauen, Geschäftsanwendungen entwickeln und Ideen vom ersten Entwurf bis zum Produktivbetrieb begleiten. Bei SAB Tourismo setzte ich konkrete betriebliche Anforderungen in Software und CRM-Automatisierung um.",
@@ -553,7 +544,6 @@ export const content = {
       ],
       cv: "Mehr dazu in meinem Lebenslauf",
       portrait: "Porträt von Ömer Meraloğlu",
-      caption: "Entwickler. Analyst. Gestalter.",
       capabilities: [
         { label: "Entwickeln", title: "Systeme bauen." },
         { label: "Verstehen", title: "Den Daten folgen." },
@@ -562,8 +552,7 @@ export const content = {
     },
     journey: {
       eyebrow: "Mein Werdegang",
-      title: ["Lernen.", "Entwickeln."],
-      emphasis: "Verbinden.",
+      title: "Mein Werdegang",
       cv: "Lebenslauf ansehen",
       entries: [
         {
@@ -614,11 +603,9 @@ export const content = {
     },
     contact: {
       eyebrow: "Kontakt",
-      first: "Gute Dinge beginnen",
-      second: "mit einem",
-      emphasis: "Gespräch.",
+      title: "Kontakt aufnehmen",
       intro:
-        "Eine neue berufliche Chance, eine technische Herausforderung oder eine spannende Idee? Ich freue mich auf den Austausch.",
+        "Eine neue berufliche Chance, eine technische Herausforderung oder eine geschäftliche Anfrage? Ich freue mich auf den Austausch.",
       cta: "Gemeinsam etwas entwickeln",
       copy: "Kopieren",
       copied: "Kopiert",
@@ -632,7 +619,6 @@ export const content = {
       back: "Zurück nach oben",
     },
     footer: {
-      built: "Mit Sorgfalt und Neugier entwickelt.",
       thanks: "Danke für den Besuch",
     },
   },
@@ -810,9 +796,7 @@ export const content = {
         "PyTorch · LLM · LangChain · Vektör arama · Streamlit · Otomasyon",
       eyebrow: "Kodun arkasındaki insan",
       place: "İstanbul, Türkiye",
-      first: "Üretme içgüdüsü.",
-      second: "Anlama",
-      emphasis: "merakı.",
+      title: "Hakkımda",
       lead: "Bir şeylerin nasıl çalıştığını anlamayı seviyorum. Onları daha iyi hâle getirmeyi ise daha çok.",
       paragraphs: [
         "Temelim yazılım mühendisliği: uçtan uca sistemler kurmak, iş araçları geliştirmek ve fikirleri ilk taslaktan canlı ürüne taşımak. SAB Tourismo’da bu, gerçek operasyonel ihtiyaçları yazılıma ve CRM otomasyonuna dönüştürmek demekti.",
@@ -821,7 +805,6 @@ export const content = {
       ],
       cv: "Hikâyenin tamamı özgeçmişimde",
       portrait: "Ömer Meraloğlu’nun portresi",
-      caption: "Mühendis. Analist. Geliştirici.",
       capabilities: [
         { label: "Geliştir", title: "Sistemi kur." },
         { label: "Anla", title: "Verinin izini sür." },
@@ -830,8 +813,7 @@ export const content = {
     },
     journey: {
       eyebrow: "Yolculuğum",
-      title: ["Öğrenmek.", "Üretmek."],
-      emphasis: "Birleştirmek.",
+      title: "Yolculuğum",
       cv: "Özgeçmişimi görüntüle",
       entries: [
         {
@@ -882,11 +864,9 @@ export const content = {
     },
     contact: {
       eyebrow: "İletişime geçelim",
-      first: "Güzel şeyler",
-      second: "bir",
-      emphasis: "sohbetle başlar.",
+      title: "İletişime geçelim",
       intro:
-        "Yeni bir fırsat, teknik bir problem veya keşfetmeye değer bir fikir. Sizden duymak isterim.",
+        "Yeni bir fırsat, teknik bir problem veya bir iş talebi. Sizden duymak isterim.",
       cta: "Birlikte bir şeyler üretelim",
       copy: "Kopyala",
       copied: "Kopyalandı",
@@ -900,7 +880,6 @@ export const content = {
       back: "Başa dön",
     },
     footer: {
-      built: "Özen ve biraz merakla geliştirildi.",
       thanks: "Uğradığınız için teşekkürler",
     },
   },

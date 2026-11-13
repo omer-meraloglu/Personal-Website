@@ -10,6 +10,11 @@ import { content, languages, projectData, certificateData } from "./content.js";
 
 const Locale = createContext(null);
 const useLocale = () => useContext(Locale);
+const Asterisk = () => (
+  <svg className="asterisk-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="3.5" aria-hidden="true" focusable="false">
+    <path d="M16 2v28M2 16h28M6.1 6.1l19.8 19.8M6.1 25.9L25.9 6.1" />
+  </svg>
+);
 const Arrow = () => <span aria-hidden="true">↗</span>;
 const External = ({ href, children, ...props }) => (
   <a href={href} target="_blank" rel="noopener" {...props}>
@@ -180,7 +185,7 @@ function Hero() {
       <div className="hero-content">
         <p className="eyebrow">
           <span className="small-cross" aria-hidden="true">
-            ✳
+            <Asterisk />
           </span>
           {t.role}
         </p>
@@ -417,7 +422,7 @@ function ProjectVisual({ project, index }) {
           </div>
           <div className="rag-path">
             <span />
-            <b>✳</b>
+            <b><Asterisk /></b>
             <span />
           </div>
           <div className="rag-answer">
@@ -604,14 +609,11 @@ function About() {
             </div>
             <div className="portrait-caption mono">
               <span>Ömer Meraloğlu</span>
-              <span>{t.about.caption}</span>
             </div>
           </div>
           <div className="about-copy reveal">
             <h2 id="about-heading">
-              {t.about.first}
-              <br />
-              {t.about.second} <em>{t.about.emphasis}</em>
+              {t.about.title}
             </h2>
             <p className="about-lead">{t.about.lead}</p>
             {t.about.paragraphs.map((paragraph) => (
@@ -647,13 +649,7 @@ function Journey() {
       <div className="journey-heading reveal">
         <SectionLabel number="03">{t.journey.eyebrow}</SectionLabel>
         <h2 id="experience-heading">
-          {t.journey.title.map((line) => (
-            <React.Fragment key={line}>
-              {line}
-              <br />
-            </React.Fragment>
-          ))}
-          <em>{t.journey.emphasis}</em>
+          {t.journey.title}
         </h2>
         <CV>{t.journey.cv}</CV>
       </div>
@@ -771,14 +767,12 @@ function Contact() {
         <div className="section-top">
           <SectionLabel number="05">{t.contact.eyebrow}</SectionLabel>
           <span className="contact-asterisk" aria-hidden="true">
-            ✳
+            <Asterisk />
           </span>
         </div>
         <div className="contact-main reveal">
           <h2 id="contact-heading">
-            {t.contact.first}
-            <br />
-            {t.contact.second} <em>{t.contact.emphasis}</em>
+            {t.contact.title}
           </h2>
           <p>{t.contact.intro}</p>
           <a className="contact-cta" href="mailto:omer-meraloglu@hotmail.com">
@@ -933,7 +927,7 @@ export default function App() {
             {t.disciplines.map((discipline, index) => (
               <React.Fragment key={index}>
                 <span>{discipline}</span>
-                {index < 3 && <b>✳</b>}
+                {index < 3 && <b><Asterisk /></b>}
               </React.Fragment>
             ))}
           </div>
@@ -946,9 +940,8 @@ export default function App() {
       </main>
       <footer className="site-footer wrap mono">
         <span>© {new Date().getFullYear()} Ömer Meraloğlu</span>
-        <span>{t.footer.built}</span>
         <span>
-          {t.footer.thanks} <span aria-hidden="true">✳</span>
+          {t.footer.thanks} <span aria-hidden="true"><Asterisk /></span>
         </span>
       </footer>
     </Locale.Provider>
