@@ -32,7 +32,7 @@ export const projectData = [
     id: "seeds",
     categories: ["software"],
     url: "https://storyseeds.vercel.app/",
-    image: "story-seeds.webp",
+    image: "story-seeds-updated.webp",
     tags: ["Interactive web", "3D", "Product development"],
   },
   {
@@ -240,7 +240,7 @@ export const content = {
         type: "AI automation · Web application",
         visual: "The world. In five minutes.",
         description:
-          "An AI-assisted, five-minute news briefing, seven days a week. Automated research and publishing, direct source links, and an edition archive turn the daily news cycle into a calmer reading ritual.",
+          "An AI-assisted, five-minute news briefing, seven days a week, covering world news, business, technology, and Turkey. Automated research and publishing combine source-linked stories, an edition archive, and publisher perspective labels with assessment sources and review dates.",
         alt: "First Light’s morning briefing and source-linked news",
       },
       fraud: {
@@ -255,7 +255,7 @@ export const content = {
         type: "Interactive experience · Digital storytelling",
         visual: "22 seeds. 22 stories. One shared future.",
         description:
-          "Physical seed capsules become a gateway to digital history. I engineered the interactive platform for a commemorative concept honoring the Korean War’s 22 UN Sending States, and contributed to its product development.",
+          "I engineered an interactive platform honoring the Korean War’s 22 UN Sending States and contributed to its product development. QR-linked seed capsules connect to national histories and veteran interviews, with a draggable 3D capsule, an interactive globe, and a seed-to-bloom animation bringing remembrance to life.",
         alt: "Story Seeds’ interactive website linking 22 seed capsules to the stories of 22 nations",
       },
       rag: {
@@ -504,7 +504,7 @@ export const content = {
         type: "KI-Automatisierung · Webanwendung",
         visual: "Die Welt. In fünf Minuten.",
         description:
-          "Ein KI-gestütztes Nachrichtenbriefing für fünf Minuten, sieben Tage die Woche. Automatisierte Recherche und Veröffentlichung, direkte Quellenlinks und ein Ausgabenarchiv machen den Nachrichtenalltag übersichtlicher.",
+          "Ein KI-gestütztes Fünf-Minuten-Briefing an sieben Tagen der Woche zu Weltgeschehen, Wirtschaft, Technologie und der Türkei. Automatisierte Recherche und Veröffentlichung verbinden Quellenlinks, ein Ausgabenarchiv und Einordnungen der politischen Ausrichtung von Medien mit Bewertungsquellen und Prüfdatum.",
         alt: "Das Morgenbriefing von First Light mit direkten Nachrichtenquellen",
       },
       fraud: {
@@ -519,7 +519,7 @@ export const content = {
         type: "Interaktives Erlebnis · Digitales Storytelling",
         visual: "22 Samen. 22 Geschichten. Eine gemeinsame Zukunft.",
         description:
-          "Physische Samenkapseln öffnen den Zugang zu digitaler Geschichte. Ich entwickelte die interaktive Plattform für ein Erinnerungskonzept zu den 22 UN-Entsendestaaten des Koreakriegs und wirkte an der Produktentwicklung mit.",
+          "Ich entwickelte die interaktive Plattform eines Erinnerungskonzepts zu den 22 UN-Entsendestaaten des Koreakriegs und wirkte an der Produktentwicklung mit. Samenkapseln mit QR-Codes verbinden Ländergeschichten und Veteraneninterviews. Eine drehbare 3D-Kapsel, ein interaktiver Globus und eine Wachstumsanimation machen Erinnerung erlebbar.",
         alt: "Story Seeds verbindet 22 Samenkapseln mit den Geschichten von 22 Nationen",
       },
       rag: {
@@ -765,7 +765,7 @@ export const content = {
         type: "Yapay zekâ otomasyonu · Web uygulaması",
         visual: "Dünya. Beş dakikada.",
         description:
-          "Haftanın yedi günü beş dakikada okunabilen, yapay zekâ destekli haber özeti. Otomatik araştırma ve yayımlama, doğrudan kaynak bağlantıları ve sayı arşiviyle gündemi takip etmeyi daha sakin bir deneyime dönüştürüyor.",
+          "Haftanın yedi günü dünya, iş dünyası, teknoloji ve Türkiye gündemini beş dakikada sunan yapay zekâ destekli haber özeti. Otomatik araştırma ve yayımlama; kaynak bağlantılı haberleri, sayı arşivini ve değerlendirme kaynağı ile inceleme tarihini gösteren yayıncı eğilimi etiketlerini bir araya getiriyor.",
         alt: "First Light sabah özeti ve kaynak bağlantılı haberleri",
       },
       fraud: {
@@ -780,7 +780,7 @@ export const content = {
         type: "Etkileşimli deneyim · Dijital hikâye anlatımı",
         visual: "22 tohum. 22 hikâye. Ortak bir gelecek.",
         description:
-          "Fiziksel tohum kapsülleri, dijital tarihe açılan bir kapıya dönüşüyor. Kore Savaşı’na katılan 22 BM ülkesini anan bu konseptin etkileşimli platformunu geliştirdim ve ürün geliştirme sürecine katkı sağladım.",
+          "Kore Savaşı’na katılan 22 BM ülkesini anan konseptin etkileşimli platformunu geliştirdim ve ürün geliştirme sürecine katkı sağladım. QR bağlantılı tohum kapsülleri ülke tarihlerini ve gazilerin röportajlarını birleştiriyor; döndürülebilen 3D kapsül, etkileşimli küre ve tohumdan çiçeğe büyüme animasyonu anıları canlandırıyor.",
         alt: "22 tohum kapsülünü 22 ülkenin hikâyesine bağlayan etkileşimli Story Seeds sitesi",
       },
       rag: {
